@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Energy Data - Dash -</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/starter-template.css" rel="stylesheet">
+	
+	<!-- lightbox -->
+	<link href="../dist/css/lightbox.css" rel="stylesheet">
+	<link href="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+	
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+					</button>
+					<a class="navbar-brand" href="#">- Dash -</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="../index.html">Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Areas <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="../areas/medical.html">Medical | Health</a></li>
+								<li class="active"><a href="../areas/energy.html">Energy</a></li>
+								<li><a href="../areas/financial.html">Financial</a></li>
+								<li><a href="../areas/social.html">Social | Cultural</a></li>
+							</ul>
+						</li>
+						<li><a href="../concept/index.html">Concept</a></li>
+						<li><a href="../about/index.html">About</a></li>
+						<li><a href="../learn/index.html">Learn | DIY</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Energy</h1>
+        <p class="lead">Correl8 has depicted four sets of energy data which combines the data from Department of Industry and Science with Australian Bureau of Statistics and private sector data.</p>
+		<a href="#" data-toggle="tooltip" title="National Map" data-featherlight="#viz1"><img class="fourbox" src="../img/Energy_NM_thumbnail.png" alt="viz1.jpg"/></a>
+		<a href="#" data-toggle="tooltip" title="Tableau" data-featherlight="#viz2"><img class="fourbox" src="../img/Energy_Tableau.PNG" alt="viz2.jpg"/></a>
+		<a href="#" data-toggle="tooltip" title="R" data-featherlight="#viz3"><img class="fourbox" src="../img/Energy_R.png" alt="viz3.jpg"/></a>
+		<a href="#" data-toggle="tooltip" title="Fusion Table" data-featherlight="#viz4"><img class="fourbox" src="../img/Energy_Fusion.png" alt="viz4.jpg"/></a>
+      
+	  <div id="viz1" hidden="hidden">
+		<iframe style="width: 1000px; height: 600px; border: none;" src="http://nationalmap.gov.au/renewables/#share=s-6UxbDJJqtgAQVAWA" allowFullScreen mozAllowFullScreen webkitAllowFullScreen></iframe>
+	  </div>
+	  <div id="viz2" hidden="hidden"><script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1272px; height: 541px;'><noscript><a href='#'><img alt='Sheet 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;En&#47;EnergyConsumptionbyIndustryandFuel&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1272' height='541' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='EnergyConsumptionbyIndustryandFuel&#47;Sheet2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;En&#47;EnergyConsumptionbyIndustryandFuel&#47;Sheet2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div></div>
+	  <div id="viz3" hidden="hidden"><img src="../img/Energy_R.png" alt="Energy_R.png"/></div>
+	  <div id="viz4" hidden="hidden"><iframe width="1000" height="700" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;q=select+col1%2C+col10%2C+col20%2C+col30%2C+col40+from+14cwefb3XpFLlWR1gZBSxg_K_ammlpayyryHYfxHO+where+col0+%3D+&#39;Indigenous+production&#39;+order+by+col10+asc+limit+10&amp;viz=GVIZ&amp;t=COLUMN&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=1000&amp;height=700"></iframe></div>
+	  
+	 <p class="disclaim"><i>Ensure you enable scripting in your browser.</i></p>
+	<ul class="textbox">
+		<li>The first visualisation shows the National Map depicting the electricity transmission grid in Australia which is heavily dominated by generators on the eastern seaboard.</li>
+		<li>The graph next to it shows the energy production in Australia over the last four decades from various fuel types. This graph shows that energy production from most fuel types have increased over the years, except from Nuclear (Uranium) and Crude oil. Energy production from coal has dominated the fuel mix in Australia for every decade.</li>
+		<li>The bottom graph shows the energy consumption in Australia from the various industry sectors during the 2013-14 financial year. Road transport dominates this category with over 90% of the energy consumed from refined fuel sources..</li>
+		<li>The multi graph tab shows that unique nature of electricity pricing in the different states in Australia.</li>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<script src="//cdn.rawgit.com/noelboss/featherlight/1.5.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../dist/js/lightbox.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

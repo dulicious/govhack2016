@@ -1,0 +1,29 @@
+body {
+  padding-top: 50px;
+}
+
+img:hover {
+	opacity:1.0;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.fourbox {
+	border-radius: 10% 40%;
+	padding: 10px;
+	width: 40%;
+	opacity: 0.5;
+}
+
+.textbox {
+	padding: 10px;
+	text-align: left;
+}
+
+.disclaim {
+text-align:center;
+}
+
